@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; background-color: black; background-color: pink; }
+
+
+
+body {
+	margin : 0;
+	padding : 0;
+	background : url (img.jpg) center center fixed no-repeat;
+}
+video {
+	position : fixed;
+	top : 0; 
+	left : 0;
+	min-width : 100 %;
+	min-height : 100 %;
+	width : auto;
+	height : auto;
+	z-index : -1;
+}
+
+
+.fade-in { animation: fadeIn 5s; }
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.keyframes abc{
+0% {opcacity:0;
+100% {opcacity}
+}
+
+
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+div {
+width:100%;
+height:100%;
+margin: 0 0 0 0;
+/*마우스가 빠졌을 때에도 서서히 변하기 위해 div에도 변형 속성을 줍니다*/
+/*배경색 변형 선언*/
+transition-property: background-color;
+/*변형 완료 1초*/
+transition-duration: 1s;
+/*빠른 시작 서서히 감속*/
+transition-timing-function: ease-out;
+}
+
+/*hover시 있을 변형을 입력합니다*/
+div:hover {
+
+/*rgb컬러a알파 0~1까지 화이트 0.3만큼 알파 혹은 반투명*/
+background: rgba(255, 255, 255, 0.3);
+/* 변형할 것은 배경 1초, 빠른 시작 서서히 감속*/
+transition: background 1s ease-out;
+}
+
+span {
+  position: relative;
+  top:45%;
+  color:#fff;
+  text-align:center;
+  font-size:12px;
+}
+
+
+
+
